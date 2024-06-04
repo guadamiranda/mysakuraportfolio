@@ -1,0 +1,19 @@
+@import '../../../../Variables/colors.module.scss';
+@import '../../../../Variables/fonts.module.scss';
+
+.buttonStyle{
+    background-color: $pink;
+    border-radius: 5px;
+    border: none;
+    color: rgba(0, 0, 0, 0.671);
+    cursor: pointer;
+    font-family: $montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    height: 30px;
+    width: 250px;
+}
+
+.buttonStyle:hover {
+    background-color: $darkerPink;
+}

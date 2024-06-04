@@ -1,0 +1,60 @@
+@import "../../Variables/colors.module.scss";
+@import "../../Variables/fonts.module.scss";
+
+.homeComponentContainer {
+  &_opacity {
+    background-color: rgba(49, 49, 49, 0.74);
+    height: 100vh;
+    width: 100vw;
+  }
+
+  &_body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &_subTitule {
+    color: white;
+    font-family: $montserrat;
+    font-weight: 300;
+
+    &_title{
+      cursor: pointer;
+    }
+
+    &_icon {
+      display: inline-block;
+    }
+  }
+
+  &_subTitule:hover > &_subTitule_icon{
+    animation: rotateForever 5s linear infinite;
+    cursor: pointer;
+  }
+
+  &_linkedInIcon {
+    color: #e46f80;
+    cursor: pointer;
+    font-size: 30px;
+    margin-top: 10px;
+    transition: 0.3s;
+
+    &:hover {
+      color: #c55263;
+      transition: 0.3s;
+    }
+  }
+}
+
+@keyframes rotateForever {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

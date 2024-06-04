@@ -8,6 +8,9 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  scrollbar-gutter: auto;
+  scrollbar-color: rgb(173, 173, 173) rgba(0, 0, 0, 0.103);
+  scrollbar-width: thin;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,

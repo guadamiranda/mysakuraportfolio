@@ -1,0 +1,48 @@
+@import '../../Variables/colors.module.scss';
+
+.themeSwitchContainer{
+    border-radius: 34px;
+    cursor: pointer;
+    display: flex;
+    font-size: 20px;
+    gap: 10px;
+    height: 34px;
+    margin: 12px 10px;
+    padding: 4px 5px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 65px;
+    z-index: 999;
+
+    &__circulo{
+        align-items: center;
+        justify-content: center;
+        background-color: $pink;
+        display: flex;
+        position: absolute;
+        border-radius: 34px;
+        width: 26px;
+        height: 26px;
+    }
+
+    &__circuloSi {
+        animation: izquierdaDerecha 0.4s;   
+        left: 30px
+    }
+
+    &__circuloNo {
+        animation: derechaIzquierda 0.4s;
+        left: 1px
+    }
+
+    @keyframes derechaIzquierda{
+        from {left: 30px}
+        to {left: 1px; transform: rotate(-0.5turn);}
+    }
+
+    @keyframes izquierdaDerecha{
+        from {left: 1px; transform: rotate(-0.5turn);}
+        to {left: 30px}
+    }
+}

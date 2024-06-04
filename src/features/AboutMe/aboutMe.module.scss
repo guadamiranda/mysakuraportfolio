@@ -1,0 +1,78 @@
+@import "../../Variables/colors.module.scss";
+@import "../../Variables/fonts.module.scss";
+
+.aboutMeContainer {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  padding: 50px 30px;
+
+  &_text {
+    border-radius: 5px;
+    font-family: $montserrat;
+    font-weight: 300;
+    height: 292px;
+    width: 718px;
+  }
+
+  &_textContainer {
+    background-color: $pink;
+    border-radius: 4px;
+    height: 81%;
+    width: 20%;
+    box-shadow: 0px 3px 12px -1px $pink;
+  }
+
+  &_texts {
+    display: flex;
+    justify-content: space-evenly;
+    height: 40%;
+    width: 100%;
+  }
+
+  &_greetings {
+    width: 90%;
+  }
+
+  &_textAboutMe {
+    font-size: 20px;
+
+    b {
+      border-bottom: 1px solid $pink;
+      color: $pink;
+    }
+  }
+
+  &_subtitule {
+    font-family: $montserrat;
+    font-size: 15px;
+    font-weight: 200;
+  }
+
+  &_icon {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutMeContainer {
+    &_textAboutMe {
+      font-size: 15px;
+      margin-left: 40px;
+      width: 60%;
+    }
+
+    &_textContainer {
+      border-radius: 4px;
+      height: 81%;
+      width: 17%;
+    }
+
+    &_texts {
+      justify-content: flex-start;
+      gap: 15px;
+      margin-left: 40px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+
+.divisorContainer{
+    height: 30px;
+    width: 100%;
+
+    &_img{
+        background-image: url('../../../public/Assets/Images/Space.jpg');
+        background-repeat: repeat;
+        background-size:cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    &_opacty{
+        background-color: rgba(0, 0, 0, 0);
+        height: 30px;
+        width: 100%;
+    }
+}

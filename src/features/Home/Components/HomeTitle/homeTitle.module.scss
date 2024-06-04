@@ -1,0 +1,49 @@
+@import "../../../../Variables/colors.module.scss";
+@import "../../../../Variables/fonts.module.scss";
+
+.typewriter {
+
+  &_nameText {
+    color: #fff;
+    font-family: $montserrat;
+    font-size: 30px;
+    font-weight: 400;
+    overflow: hidden;
+    border-right: 0.15em solid $pink;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  }
+
+  b {
+    color: $pink;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: $pink;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .typewriter {
+    &_nameText {
+      font-size: 20px;
+    }
+  }
+}

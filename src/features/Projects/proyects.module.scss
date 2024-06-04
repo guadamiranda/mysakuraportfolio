@@ -1,0 +1,11 @@
+
+.proyectsContainer {
+    padding: 10px 100px;
+
+    &_cards{
+        display: flex;
+        justify-content: center;
+        gap: 44px;
+        flex-wrap: wrap;
+    }
+}
